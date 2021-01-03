@@ -73,21 +73,21 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
-//Lineage Colors
-$lineage-primary: #167C80 !default;
-$lineage-warning: #F4AC45 !default;
-$lineage-danger:  #D0422D !default;
-$lineage-success: #38853B !default;
-$lineage-info:    #00B1E5 !default;
+//CONQUER Colors
+$CONQUER-primary: #64ACFF !default;
+$CONQUER-warning: #F4AC45 !default;
+$CONQUER-danger:  #D0422D !default;
+$CONQUER-success: #38853B !default;
+$CONQUER-info:    #00B1E5 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "primary":    $lineage-primary,
+  "primary":    $CONQUER-primary,
   "secondary":  $secondary,
-  "success":    $lineage-success,
-  "info":       $lineage-info,
-  "warning":    $lineage-warning,
-  "danger":     $lineage-danger,
+  "success":    $CONQUER-success,
+  "info":       $CONQUER-info,
+  "warning":    $CONQUER-warning,
+  "danger":     $CONQUER-danger,
   "light":      $light,
   "dark":       $dark
 ), $theme-colors);

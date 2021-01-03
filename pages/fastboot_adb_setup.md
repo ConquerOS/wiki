@@ -89,4 +89,4 @@ and `adb logcat -C` to view logs in colour
 
 ## Need help?
 
-You can find assistance with LineageOS on [our subreddit](https://reddit.com/r/LineageOS), or in [#LineageOS on freenode](https://webchat.freenode.net/?channels=LineageOS).
+You can find assistance with ConquerOS on [our subreddit](https://reddit.com/r/ConquerOS), or in [#ConquerOS on freenode](https://webchat.freenode.net/?channels=ConquerOS).

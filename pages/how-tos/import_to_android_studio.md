@@ -17,7 +17,7 @@ Unpack the downloaded file to a destination of your choice, then follow the inst
 
 ## Prepare a project file
 
-Open a shell and navigate to the root folder of your Android sources, e.g. `~/android/lineage`.
+Open a shell and navigate to the root folder of your Android sources, e.g. `~/android/conquer`.
 In case environment functions and variables are not yet loaded, type:
 
 ```
@@ -34,16 +34,16 @@ make idegen && development/tools/idegen/idegen.sh
 
 {% include alerts/note.html content="This can take some time while it goes through your tree and generates an Android Studio project based on it." %}
 
-In case you are developing on multiple branches or plan to do so (otherwise skip the next step), do the following (replace every occurrence of `lineage` with your desired naming scheme):
+In case you are developing on multiple branches or plan to do so (otherwise skip the next step), do the following (replace every occurrence of `conquer` with your desired naming scheme):
 
 ```
-mv android.ipr lineage.ipr
-mv android.iml lineage.iml && ln -s lineage.iml android.iml
+mv android.ipr conmquer.ipr
+mv android.iml conquer.iml && ln -s conquer.iml android.iml
 ```
 
 ## Prepare Android Studio
 
-Android Studio struggles to parse the huge LineageOS / Android sources and requires some different settings than the defaults. Therefore, before starting actual development, it is necessary to change some of those.
+Android Studio struggles to parse the huge ConquerOS / Android sources and requires some different settings than the defaults. Therefore, before starting actual development, it is necessary to change some of those.
 
 ### Configure memory
 
@@ -76,7 +76,7 @@ Then navigate to your Android source directory and open the `.ipr` file.
 
 ### Configure the project
 
-After opening the project, navigate to **File -> Project Structure -> SDKs** (this might be disabled until the indexing has finished) and set up a JDK (version 1.8 for LineageOS 14.1 branch) where you remove _all_ libraries (`.jar` files).
+After opening the project, navigate to **File -> Project Structure -> SDKs** (this might be disabled until the indexing has finished) and set up a JDK (version 1.8 for ConquerOS 14.1 branch) where you remove _all_ libraries (`.jar` files).
 
 Then, on the left side of the settings panel, choose **Project Settings -> Modules** and mark the folder `out/target/common/R` as `Sources` (you can also select it and press [ALT]+[S]).
 
@@ -88,5 +88,5 @@ Now, after all the previous steps are done, you can actually start developing an
 
 ### Contribute!
 
-After you have modified the sources and tested your change, you can contribute to LineageOS by [submitting your work]({{ "/how-to/submitting-patches" | relative_url }}).
+After you have modified the sources and tested your change, you can contribute to ConquerOS by [submitting your work]({{ "/how-to/submitting-patches" | relative_url }}).
 

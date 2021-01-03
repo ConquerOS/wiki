@@ -4,25 +4,25 @@ title: Frequently Asked Questions
 permalink: faq.html
 ---
 
-## Installing LineageOS zips in Recovery results in "Error 7"
+## Installing ConquerOS zips in Recovery results in "Error 7"
  - The most common reasons for this error are:
    - You are trying to install a build for a different device. _You need to make sure you download the zip for the correct device *and* variant_
-   - You are attempting to migrate from an unofficial build to official LineageOS. _A full data wipe is needed if you are coming from something other than an official build of LineageOS._
-   - Your vendor/modem/bootloader is too old (or maybe too new). _Flash the correct stock image for your device, before wiping data and attempting to install LineageOS again_. This information should be listed on the device's wiki page.
+   - You are attempting to migrate from an unofficial build to official ConquerOS. _A full data wipe is needed if you are coming from something other than an official build of ConquerOS._
+   - Your vendor/modem/bootloader is too old (or maybe too new). _Flash the correct stock image for your device, before wiping data and attempting to install ConquerOS again_. This information should be listed on the device's wiki page.
    - Your recovery is outdated. _Flash the newest available version of the recommended recovery image for your device_.
- - If your error still persists after confirming these are not causing your issue, ask someone for help IRC (#lineageos@freenode) or on the [Subreddit](http://reddit.com/r/lineageos) and provide a recovery log.
+ - If your error still persists after confirming these are not causing your issue, ask someone for help IRC (#conquer@freenode) or on the [Subreddit](http://reddit.com/r/conquer) and provide a recovery log.
 
 ## My device _is_ officially supported, but there's no zips for it on the download page. Where are they?
  - Be patient. Devices are slowly being built throughout the week. Maintainers have busy lives, and sometimes an issue is holding it back. Please do not ask for ETAs.
 
-## My device is _not_ officially supported, but I'd really like to give LineageOS a try. Can you support my device?
- - All devices are maintained by open source contributors - [sorry, we don't take device requests]({{ "device_requests.html" | relative_url }}). If you would like to bring-up LineageOS for a device, and can meet some basic standards, we'll happily look into making it official.
- - If you have a working device tree/kernel, and would like to submit it for official builds, please contact [devrel@lineageos.org](mailto:devrel@lineageos.org) with links to them. Please note - your device **must** have full hardware support (i.e., every peripheral works) and **must** be stable.
+## My device is _not_ officially supported, but I'd really like to give ConquerOS a try. Can you support my device?
+ - All devices are maintained by open source contributors - [sorry, we don't take device requests]({{ "device_requests.html" | relative_url }}). If you would like to bring-up ConquerOS for a device, and can meet some basic standards, we'll happily look into making it official.
+ - If you have a working device tree/kernel, and would like to submit it for official builds, please contact [devrel@conqueros.co](mailto:devrel@conqueros.co) with links to them. Please note - your device **must** have full hardware support (i.e., every peripheral works) and **must** be stable.
 
 ## A build for my device disappeared? Where'd it go?
  - Occasionally a build is broken. If this happens, we remove it until the next build cycle. It is also possible the device is no longer in the official build roster and its old builds are being purged, or that the version it supported is no longer supported. You can check your device's wiki page to confirm support status.
 
-## Where can I find the last build for _xxx_ device before support was dropped/its LineageOS version was deprecated?
+## Where can I find the last build for _xxx_ device before support was dropped/its ConquerOS version was deprecated?
  - In short, you can't. We don't keep building, or keep builds around for any version older than 2 Android versions (e.g. when 17.1 builds started, 15.1 builds stopped and the builds were slowly removed, while 16.0 builds continued). We don't keep old builds around for a multitude of reasons, the largest being that we won't keep old, insecure, potentially broken builds around. Additionally, we don't have the server space (or the space on mirrors) to do so.
 
 ## I found a bug. What do I do?
@@ -32,13 +32,13 @@ permalink: faq.html
  - Don't ask.
 
 ## My device doesn't pass SafetyNet!
- - Some devices pass their bootloader unlock status and verity status to android's kernel during boot. We don't purposefully remove those flags, as it isn't our place to lie about security features. There's also a [blog post](https://www.lineageos.org/Safetynet/) about this topic, which explains our reasons further.
+ - Some devices pass their bootloader unlock status and verity status to android's kernel during boot. We don't purposefully remove those flags, as it isn't our place to lie about security features. There's also a [blog post](https://www.conqueros.co/Safetynet/) about this topic, which explains our reasons further.
 
 ## Will you enable signature spoofing?
  - Once again, it isn't our place to lie about security features. No.
 
 ## Where does the updater app store the downloaded zip?
- - `/data/lineageos_updates/`
+ - `/data/conquer_updates/`
 
 ## Mirrors? Why don't you use torrents? Or IPFS? Or carrier pigeons?
  - This question isn't new. To list a few reasons:

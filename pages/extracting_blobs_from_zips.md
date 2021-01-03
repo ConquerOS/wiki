@@ -1,11 +1,11 @@
 ---
 sidebar: home_sidebar
-title: Extracting proprietary blobs from LineageOS zip files
+title: Extracting proprietary blobs from ConquerOS zip files
 permalink: extracting_blobs_from_zips.html
 ---
 ## Introduction
 
-Proprietary blobs can be extracted either from a device already running LineageOS or from a LineageOS installable zip. In this guide we will describe the steps required to extract proprietary files from installable zips.
+Proprietary blobs can be extracted either from a device already running ConquerOS or from a ConquerOS installable zip. In this guide we will describe the steps required to extract proprietary files from installable zips.
 
 Before beginning, it is required to know the difference between the types of OTAs:
 
@@ -36,17 +36,17 @@ mkdir ~/android/system_dump/
 cd ~/android/system_dump/
 ```
 
-Extract `system.transfer.list` and `system.new.dat.br` or `system.new.dat` from the installable LineageOS zip:
+Extract `system.transfer.list` and `system.new.dat.br` or `system.new.dat` from the installable ConquerOS zip:
 
 ```
-unzip path/to/lineage-*.zip system.transfer.list system.new.dat*
+unzip path/to/ConquerOS-*.zip system.transfer.list system.new.dat*
 ```
 where `path/to/` is the path to the installable zip.
 
-If your OTA includes `vendor.transfer.list` and `vendor.new.dat.br` or `vendor.new.dat` (other others), extract them from the installable LineageOS zip as well:
+If your OTA includes `vendor.transfer.list` and `vendor.new.dat.br` or `vendor.new.dat` (other others), extract them from the installable ConquerOS zip as well:
 
 ```
-unzip path/to/lineage-*.zip vendor.transfer.list vendor.new.dat*
+unzip path/to/ConquerOS-*.zip vendor.transfer.list vendor.new.dat*
 ```
 where `path/to/` is the path to the installable zip.
 
@@ -137,7 +137,7 @@ cd ~/android/system_dump/
 Extract the `system` folder from the zip:
 
 ```
-unzip path/to/lineage-*.zip system/*
+unzip path/to/ConquerOS-*.zip system/*
 ```
 where `path/to/` is the path to the installable zip.
 
@@ -163,10 +163,10 @@ mkdir ~/android/system_dump/
 cd ~/android/system_dump/
 ```
 
-Extract the `payload.bin` file from the LineageOS installation zip file:
+Extract the `payload.bin` file from the ConquerOS installation zip file:
 
 ```
-unzip /path/to/lineage-*.zip payload.bin
+unzip /path/to/ConquerOS-*.zip payload.bin
 ```
 where `/path/to/` is the path to the installable zip.
 
@@ -180,14 +180,14 @@ sudo apt-get install python-protobuf
 
 You can now extract the `.img` files from the payload:
 
-* If you have a LineageOS build tree checked out already, you can just run the script to extract the payload:
+* If you have a ConquerOS build tree checked out already, you can just run the script to extract the payload:
   ```
-  python /path/to/lineage-tree/lineage/scripts/update-payload-extractor/extract.py payload.bin --output_dir ./
+  python /path/to/CONQUER-tree/CONQUER/scripts/update-payload-extractor/extract.py payload.bin --output_dir ./
   ```
 
-* If you don't have a LineageOS build tree checked out, you can clone our scripts repo, and then run the script to extract the payload:
+* If you don't have a ConquerOS build tree checked out, you can clone our scripts repo, and then run the script to extract the payload:
   ```
-  git clone https://github.com/LineageOS/scripts
+  git clone https://github.com/ConquerOS/scripts
   python /path/to/scripts/update-payload-extractor/extract.py payload.bin --output_dir ./
   ```
 

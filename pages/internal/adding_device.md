@@ -10,8 +10,8 @@ tags:
 
 ## Requirements for adding a device
 
-The LineageOS wiki provides instructions based on the assumption that your device has got its device tree/kernel
-under the [LineageOS GitHub organization](https://github.com/LineageOS), and that it supports building Lineage 13.0 or higher. If your device meets
+The ConquerOS wiki provides instructions based on the assumption that your device has got its device tree/kernel
+under the [ConquerOS Official Devices GitHub organization](https://github.com/ConquerOS-Devices). If your device meets
 both those requirements, follow the instructions below to get your device set up.
 
 ## Setting up the wiki locally
@@ -23,7 +23,7 @@ See [contributing using repo](contributing.html#using-repo) for detailed instruc
 ### Prepare the required files
 
 There are a few files which need to be there to have a device on the wiki.
-In order to get them, navigate to `$LINEAGE_SRC/lineage/wiki/` and run:
+In order to get them, navigate to `$CONQUER_SRC/conquer/wiki/` and run:
 
 ```
 ./scripts/generate_device.sh your_device
@@ -33,7 +33,7 @@ Obviously replace `your_device` with the codename of your device
 
 ### Populating the YAML
 
-The sample template has been copied to `$LINEAGE_SRC/lineage/wiki/_data/devices/your_device.yml`.
+The sample template has been copied to `$CONQUER_SRC/conquer/wiki/_data/devices/your_device.yml`.
 Update the values to match your device. An explanation of some of the options is below:
 
 {% assign definitions = site.data.schema.definitions %}
@@ -110,16 +110,16 @@ Additionally there are some optional properties which you might not need, but in
 * `custom_recovery_link`: A custom recovery link in case no official recovery exists for the specific device or it doesn't work properly. Remove this if not used!
 * `custom_recovery_codename`: If an official recovery exists for the device, but it uses a different codename, specify the used one here. Remove this if not used!
 * `custom_unlock_cmd`: Used if the command to unlock your device via fastboot is different than `fastboot oem unlock`. Remove this if not used!
-* `format_on_upgrade`: Used if the device needs to wiped on major LineageOS version due to unfixable device specific issues. Remove if not used!
+* `format_on_upgrade`: Used if the device needs to wiped on major ConquerOS version due to unfixable device specific issues. Remove if not used!
 * `is_ab_device`: Used if the device has an A/B partition scheme. Remove this if not applicable to your device!
 * `is_unlockable`: Set to false if there is no official method to unlock the bootloader. A hint will appear on the device's overview and install page. If this property is not set, it defaults to `True`
-* `required_bootloader`: Specify the bootloader versions which are required to install LineageOS. If no special requirement exists, remove this line! Example:
+* `required_bootloader`: Specify the bootloader versions which are required to install ConquerOS. If no special requirement exists, remove this line! Example:
 
   ```
   required_bootloader: [Version1, Version2]
   ```
 
-* `uses_twrp`: Used if the device doesn't use Lineage Recovery (the default)
+* `uses_twrp`: Used if the device doesn't use CONQUER Recovery (the default)
 
 {% include alerts/note.html content="If you need to assign a value to one of the fields which is not allowed by the time you create your change, update the schema validator or contact us to add it" %}
 
