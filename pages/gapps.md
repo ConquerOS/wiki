@@ -10,7 +10,7 @@ boot or run ConquerOS, however many users find them beneficial to take full adva
 These apps have been packaged by developers independent of ConquerOS, and download links have been provided for your convenience only. It is possible to perform
 a "backup" of the Google apps on your device and then "restore" them, but this does take additional steps which are not covered here.
 
-The Google apps packages are **not supported** in any way by ConquerOS.
+The Google apps packages are **not included** in any way by ConquerOS.
 
 ## Downloads
 

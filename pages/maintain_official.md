@@ -1,9 +1,9 @@
 ---
-title: Submitting a port
-permalink: submitting_device.html
+title: Maintain Device Officially
+permalink: maintain_official.html
 ---
 
-# Applting for maintainership
+# Applying for maintainership
 
  Before starting to maintain ConquerOS Officialy for your device, you have to follow some requirements bellow.
  
