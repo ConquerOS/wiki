@@ -15,4 +15,7 @@ tags:
   - Asking for device support
 
 ## Reporting a bug
-  To report bugs you will need a screenshot and logcat pf your device that running ConquerOS. AFter that you can send the log and screenshot yo our [Telegram Group](http://t.me/ConquerOSChat).
+  Reporting bugs is also important to make ConquerOS better. To reporting a bugs, you will need logcat. You can take logcat by running
+```adb logcat -d > logcat.txt``` and you will get ```logcat.txt``` that ready to send to the developers. You can also send screenshot if possible!
+
+

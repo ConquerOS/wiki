@@ -8,7 +8,7 @@
 {% endif %}
 
 ## Get ConquerOS for the {{ device.vendor }} {{ device.name }}
-[Get the builds here](https://download.conqueros.co/{{ device.codename }})
+[Get the builds here](https://download.conqueros.co)
 
 ## Guides
 
